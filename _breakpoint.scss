@@ -1,0 +1,20 @@
+@mixin screen($break-point){
+    @if $break-point == ssm{
+        @media only screen and (max-width: 400px){@content};
+    }
+    @if $break-point == sm{
+        @media only screen and (max-width: 576px){@content};
+    }
+    @if $break-point == md{
+        @media only screen and (max-width: 768px){@content};
+    }
+    @if $break-point == lg{
+        @media only screen and (max-width: 992px){@content};
+    }
+    @if $break-point == xl{
+        @media only screen and (max-width: 1200px){@content};
+    }
+    @if $break-point == 1500{
+        @media only screen and (max-width: 1500px){@content};
+    }
+}
